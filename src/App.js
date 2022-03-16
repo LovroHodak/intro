@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Introduction } from "./components/Introduction";
+import Projects from "./components/Projects";
+
+import { tw } from "./tailwind";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col gap-32 max-w-6xl m-auto">
+      <Header>
+        <div>Logo</div>
+        <Links>
+          <div>About</div>
+          <div>Projekti</div>
+          <div>Sluzbe</div>
+          <div>Technologies</div>
+          <div>Contact</div>
+          <div>CV</div>
+        </Links>
+      </Header>
+      <Introduction />
+      <Projects />
     </div>
   );
 }
+
+const Header = tw.nav`
+font-bold text-xl text-neutral-800 flex justify-between border-2
+`;
+const Links =tw.div`
+flex gap-2
+`
 
 export default App;
