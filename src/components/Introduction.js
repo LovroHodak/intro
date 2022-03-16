@@ -6,7 +6,7 @@ export function Introduction() {
   return (
     <Intro>
       <div className="order-3 md:order-1 mt-32">
-        <Title>Hello I'm Lovro Hodak</Title>
+        <Title>Hello I'm Lovro Hodak 👋</Title>
         <Subtitle>
           I’m a developer based in Slovenia.
         </Subtitle>
