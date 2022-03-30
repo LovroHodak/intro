@@ -53,4 +53,5 @@ module.exports = {
 
 4. npm i framer-motion
 
-5. 
+5. +git checkout -b test (za nov branch z imenom: test) 
+MORAS POL NAZAJ ZAMENJAT +git checkout main

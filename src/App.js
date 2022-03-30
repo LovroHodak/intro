@@ -1,4 +1,9 @@
+import Contact from "./components/Contact";
 import { Introduction } from "./components/Introduction";
+import IntroMore from "./components/IntroMore";
+import Jobs from "./components/Jobs";
+import Logo from "./components/Logo";
+import NavLinks from "./components/NavLinks";
 import Projects from "./components/Projects";
 
 import { tw } from "./tailwind";
@@ -7,27 +12,20 @@ function App() {
   return (
     <div className="flex flex-col gap-32 max-w-6xl m-auto">
       <Header>
-        <div>Logo</div>
-        <Links>
-          <div>About</div>
-          <div>Projekti</div>
-          <div>Sluzbe</div>
-          <div>Technologies</div>
-          <div>Contact</div>
-          <div>CV</div>
-        </Links>
+        <Logo />
+        <NavLinks />
       </Header>
       <Introduction />
+      <IntroMore />
       <Projects />
+      <Jobs />
+      <Contact />
     </div>
   );
 }
 
 const Header = tw.nav`
-font-bold text-xl text-neutral-800 flex justify-between border-2
+font-bold text-xl text-neutral-800 flex justify-between 
 `;
-const Links =tw.div`
-flex gap-2
-`
 
 export default App;

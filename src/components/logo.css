@@ -1,0 +1,27 @@
+#logoFirst {
+    animation: firstMotion 5s ease-in-out infinite;
+}
+
+#logoLast {
+    animation: secondMotion 5s ease-in-out infinite
+}
+
+@keyframes firstMotion {
+    0%, 87.5% {transform: translate(0%, 0);}
+    12.5% {transform: translate(400%, 0);}
+    25% {transform: translate(400%, 0);}
+    37.5%{transform: translate(400%, 125%);}
+    50% {transform: translate(400%, 125%);}
+    62.5%{transform: translate(0%, 125%) rotate(90deg);}
+    75%{transform: translate(0%, 125%);}
+}
+
+@keyframes secondMotion {
+    0%, 87.5% {transform: translate(0%, 0);}
+    12.5% {transform: translate(0%, 125%);}
+    25% {transform: translate(0%, 125%);}
+    37.5%{transform: translate(-250%, 125%);}
+    50%{transform: translate(-250%, 125%); color: red;}
+    62.5%{transform: translate(-250%, 0%);}
+    75%{transform: translate(-250%, 0%);}
+}
