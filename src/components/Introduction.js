@@ -5,7 +5,7 @@ import lovroFoto from "../lovro.png";
 export function Introduction() {
   return (
     <Intro>
-      <div className="order-3 md:order-1 mt-32">
+      <div className="order-3 md:order-1 mt-16 md:mt-32">
         <Title>Hello I'm Lovro Hodak 👋,</Title>
         <Subtitle>
            fullstack web-developer based in Slovenia.
@@ -31,13 +31,13 @@ grid grid-cols-1 gap-4 md:grid-cols-[2fr_1fr]
 `;
 
 const Title = tw.h1`
-font-thin text-8xl mb-8
+text-center md:text-left md:font-thin text-4xl md:text-8xl mb-8
 `
 const Subtitle = tw.div`
-text-2xl mb-4
+text-2xl mb-4 text-center md:text-left
 `
 const Social = tw.div`
-flex gap-4 text-2xl font-medium 
+flex gap-4 text-2xl font-medium justify-center md:justify-start
 `
 const SocialLink = tw.a`
 hover:underline cursor-pointer

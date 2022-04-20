@@ -4,7 +4,7 @@ module.exports = {
     "./public/index.html"
   ],
   theme: {
-    extend: {},
+    extend: {fontSize: {tinny: '0.5rem'}},
   },
   plugins: [],
 }

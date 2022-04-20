@@ -1,10 +1,12 @@
-#logoFirst {
+.logoFirst {
     animation: firstMotion 5s ease-in-out infinite;
 }
 
-#logoLast {
+.logoLast {
     animation: secondMotion 5s ease-in-out infinite
 }
+
+
 
 @keyframes firstMotion {
     0%, 87.5% {transform: translate(0%, 0);}
@@ -25,3 +27,4 @@
     62.5%{transform: translate(-250%, 0%);}
     75%{transform: translate(-250%, 0%);}
 }
+

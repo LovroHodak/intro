@@ -3,12 +3,13 @@ import React from "react";
 export default function Jobs() {
   return (
     <div className="">
-      <h1 className="text-6xl font-extrabold mb-8">Jobs</h1>
-      <div className="flex gap-2">
+      <h1 className="text-center md:text-left text-6xl font-extrabold mb-8">Jobs</h1>
+      <div className="flex gap-2 flex-wrap justify-center">
         <div>
           <img
             src="https://cdn.worldvectorlogo.com/logos/novartis-1.svg"
             alt="img"
+            className="w-[282px] h-[282px]"
           />
           <h1 className="text-2xl font-bold text-center p-1">Novartis</h1>
           <h2 className="text-xl text-center p-1">Operater</h2>
@@ -19,6 +20,7 @@ export default function Jobs() {
           <img
             src="https://cdn.worldvectorlogo.com/logos/novartis-1.svg"
             alt="img"
+            className="w-[282px] h-[282px]"
           />
           <h1 className="text-2xl font-bold text-center p-1">Amazon Logistics</h1>
           <h2 className="text-xl text-center p-1">Logistics associate</h2>
@@ -29,6 +31,7 @@ export default function Jobs() {
           <img
             src="https://cdn.worldvectorlogo.com/logos/novartis-1.svg"
             alt="img"
+            className="w-[282px] h-[282px]"
           />
           <h1 className="text-2xl font-bold text-center p-1">Iustitia doo</h1>
           <h2 className="text-xl text-center p-1">Sales</h2>
@@ -39,6 +42,7 @@ export default function Jobs() {
           <img
             src="https://cdn.worldvectorlogo.com/logos/novartis-1.svg"
             alt="img"
+            className="w-[282px] h-[282px]"
           />
           <h1 className="text-2xl font-bold text-center p-1">Direkt4in doo</h1>
           <h2 className="text-xl text-center p-1">Chief of staff</h2>
