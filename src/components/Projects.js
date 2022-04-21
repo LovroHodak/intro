@@ -3,62 +3,56 @@ import { tw } from "../tailwind";
 import { motion } from "framer-motion";
 import { useOnScreen } from "../hooks/use-on-screen";
 
-
-
-export default forwardRef (function Projects(_, ref) {
-console.log(ref)
+export default forwardRef(function Projects(_, ref) {
+  console.log(ref);
 
   return (
     <Project>
       <Title ref={ref}>Projects</Title>
       <ProjectItems>
         <Item
-          title="CurveZZZZ"
-          image="https://www.hkolimpija.si/wp-content/uploads/2020/09/kukovi%C4%8D-scaled.jpg"
+          title="BookNB"
+          image="https://www.klarinsvet.si/wp-content/uploads/2019/12/airbnb-booking-seminar.png"
           github="https://github.com/LovroHodak/CurveZZZZ"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
         >
-          Stay alive. Don't hit the wall, other player or yourself. Using two
-          buttons you can move in every direction. Additional two buttons can
-          turn on TURBO mode and Pause game. Fun multiplayer game.Stay alive.
-          Don't hit the wall, other player or yourself. Using two buttons you
-          can move in every direction. Additional two buttons can turn on TURBO
-          mode and Pause game. Fun multiplayer game.Stay alive. Don't hit the
-          wall, other player or yourself. Using two buttons you can move in
-          every direction. Additional two buttons can turn on TURBO mode and
-          Pause game. Fun multiplayer game.
+          Instead of visiting Airbnb and Booking seperately, BOOKNB allows you
+          to type your destination once and get results from both websites.
+          Since Airbnb has an option of choosing what kind of place you want,
+          results are filtered so only offers that include entire place are
+          being checked. And is that is not enough in this app you can search
+          multiple destinations and get results inside of a new tab.
+          <br></br>
+          <br></br>
+          React, Mongo DB, Express, Node
+        </Item>
+        <Item
+          title="PANFU band"
+          image="https://scontent-vie1-1.xx.fbcdn.net/v/t31.18172-8/17218615_1263497267036967_6785973532888712867_o.jpg?_nc_cat=110&ccb=1-5&_nc_sid=e3f864&_nc_ohc=JfWvijKJIXIAX9lOUr6&_nc_ht=scontent-vie1-1.xx&oh=00_AT8jJZRPVothJI8S-5Y4LJTiy3IsfGJeA2a2ie39maZxbw&oe=62873255"
+          github="https://github.com/LovroHodak/CurveZZZZ"
+          webSite="https://lovrohodak.github.io/CurveZZZZ/"
+        >
+          Band website. Here you can listen to PANFU music, browse through
+          gallerys and learn more about the band. There you can also find
+          contact information and links to youtube and facebook pages. Check it
+          out you might like it!
+          <br></br>
+          <br></br>
+          React, Mongo DB, Express, Node
         </Item>
         <Item
           title="CurveZZZZ"
-          image="https://www.hkolimpija.si/wp-content/uploads/2020/09/kukovi%C4%8D-scaled.jpg"
+          image="https://upload.wikimedia.org/wikipedia/en/7/75/Achtung%2C_die_Kurve%21.jpg"
           github="https://github.com/LovroHodak/CurveZZZZ"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
         >
-          Stay alive. Don't hit the wall, other player or yourself. Using two
-          buttons you can move in every direction. Additional two buttons can
-          turn on TURBO mode and Pause game. Fun multiplayer game.Stay alive.
-          Don't hit the wall, other player or yourself. Using two buttons you
-          can move in every direction. Additional two buttons can turn on TURBO
-          mode and Pause game. Fun multiplayer game.Stay alive. Don't hit the
-          wall, other player or yourself. Using two buttons you can move in
-          every direction. Additional two buttons can turn on TURBO mode and
-          Pause game. Fun multiplayer game.
-        </Item>
-        <Item
-          title="CurveZZZZ"
-          image="https://www.hkolimpija.si/wp-content/uploads/2020/09/kukovi%C4%8D-scaled.jpg"
-          github="https://github.com/LovroHodak/CurveZZZZ"
-          webSite="https://lovrohodak.github.io/CurveZZZZ/"
-        >
-          Stay alive. Don't hit the wall, other player or yourself. Using two
-          buttons you can move in every direction. Additional two buttons can
-          turn on TURBO mode and Pause game. Fun multiplayer game.Stay alive.
-          Don't hit the wall, other player or yourself. Using two buttons you
-          can move in every direction. Additional two buttons can turn on TURBO
-          mode and Pause game. Fun multiplayer game.Stay alive. Don't hit the
-          wall, other player or yourself. Using two buttons you can move in
-          every direction. Additional two buttons can turn on TURBO mode and
-          Pause game. Fun multiplayer game.
+          My first ever project. Recreation of legendary multiplayer game
+          Achtung die Kurve. In this game you try to avoid hitting yourself,
+          your opponent or the wall. Call a friend and start playing! Project
+          was build from stratch idea was only borrowed for inspiration.
+          <br></br>
+          <br></br>
+          JavaScript, CSS, HTML
         </Item>
         <Item
           myGitHub="https://github.com/LovroHodak"
@@ -67,7 +61,7 @@ console.log(ref)
       </ProjectItems>
     </Project>
   );
-})
+});
 
 /* upstairs i am sending props to Item */
 function Item({ title, image, github, webSite, myGitHub, children }) {
@@ -118,7 +112,7 @@ flex flex-col gap-8
 `;
 const ProjectItems = tw.div`
 flex flex-col gap-4
-`
+`;
 const Title = tw.h1`
 text-center md:text-left text-6xl font-extrabold
 `;

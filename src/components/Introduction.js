@@ -7,7 +7,7 @@ export function Introduction() {
     <Intro>
       <TitleAndBasic>
         <Title>Hello I'm Lovro Hodak 👋,</Title>
-        <Subtitle>fullstack web-developer based in Slovenia.</Subtitle>
+        <Subtitle>fullstack (MERN) web-developer based in Slovenia.</Subtitle>
         <Social>
           <SocialLink href="https://github.com/LovroHodak" target="_blank">
             GH

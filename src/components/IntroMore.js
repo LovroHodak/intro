@@ -6,10 +6,13 @@ export default function IntroMore() {
   return (
     <IntroMoreContainer>
       <About>
-        Talk about TECHNOLOGIES I use. My EDUCATION. My PAST EXPERIENCE in
-        LIFE(Berlin) and WORK. How I STARTED PROGRAMING and WHY I CODE. My
-        HOBBIES (sport, music) I started programming out of pure curiosity
-        around two years ago while I was still living in Berlin.{" "}
+        I was born and raised in Ljubljana where I have finished gymnasium
+        Ledina and got my bachelors degree in Philosophy. Not long after I
+        finished my studies I moved to Berlin where I have stayed for almost 4
+        years. Living abroad meant the world to me because I wanted to
+        experience the diversity of the world that we live in and Berlin is
+        probably one of the most diverse cities in Europe. But Corona came and I
+        couldn't visit Ljubljana frequently enough so I decided to move back.
       </About>
       <ShowMoreLessBtn
         className={show === "block" ? "hidden" : ""}
@@ -19,19 +22,51 @@ export default function IntroMore() {
       >
         Read more
       </ShowMoreLessBtn>
-      <About className={`${show} md:block `}>
-        I started joining JS Meetups and after some time learning about HTML and
-        CSS my first website was made. But JavaScript remained magic to me.
-        First steps were hard. But soon after getting my first Counter set up I
-        saw a potential and a decision was made that I want to do this for the
-        rest of my life. Step by step I learned about React, started looking
-        into backend and servers so I got familiar with Node and Express. Mongo
-        just came naturally as suggested by the internet. I don't really have
-        any preferences around working front or back-end though I feel most
-        comfortable using React. In my free time I am a huge sports enthusiast
-        (basketball, bike, badminton...) and a big time music lover. I like to
-        listen to music, but I also play bass, guitar and have just started
-        learning piano.
+      <About className={show}>
+        Having a bachelor's degree in Philosophy means that I have tried a
+        variety of different jobs. I have worked in administration, hospitality,
+        sales, logistios, organization of events... I have worked alone and I
+        have worked in big groups. I have worked in international teams where
+        the spoken languages were English and German, as well as in Slovenian or
+        Serbo-Croatian teams. I enjoy working in big teams but as well I value
+        my privacy. I believe the key to working in big teams are honesty and
+        willingness to see the good in other people. Being good at what you do
+        makes you feel better about yourself so I am definitely a results-driven
+        person but with constant awareness that at the end of the day I am just
+        human surrounded with other human beings.
+      </About>
+      <About className={show}>
+        While trying different career paths I stumbled upon JavaScript meetup in
+        Berlin. I was always curious about how programming works so I started to
+        visit this meetup every week. It started great with HTML and CSS
+        everything made sense to me and I couldn't realize what all the fuzz was
+        about. And then came JavaScript. I knew I had to fly or fight.
+        Fortunately I stuck with it and after I got my first Counter running the
+        whole new world of JavaScript was there for me to uncover. But life
+        happened, so many things to do and so little time. So I made a promise
+        to myself that no matter how little free time I will have I will invest
+        it into programming.
+      </About>
+      <About className={show}>
+        So when I moved back to Slovenia I took 3 months off to attend
+        Full-stack web-dev Bootstrap. Knowing only about the front-end so far
+        this was a great decision because there I learned about server side
+        programming with Node, how to interact with databases (Mongo) and I also
+        learned about the front-end library called React. Things started to come
+        together, but the more knowledge I possessed the more questions arose. I
+        knew I was up to something and I didnt mean to let it go. So I found
+        myself a job in Slovenia but I also found myself a coding mentor to
+        guide me on my programming path. I wanted to wait long enough to feel
+        comfortable about my coding skills before I start applying for jobs. If
+        you are reading this, that means the time has come. 
+      </About>
+      <About className={show}>
+      When I don't work or
+        code I either do sports (big time sport enthusiast - basketball, bike,
+        badminton,...) or music (even bigger music enthusiast - i enjoy
+        listening, creating, playing, writing...). Or... I sit on my couch
+        thinking about life and all the answers that philosophy promised to
+        deliver but haven't yet lived up to its promise.
       </About>
       <ShowMoreLessBtn
         className={show}
@@ -52,5 +87,5 @@ const About = tw.span`
 font-mono
 `;
 const ShowMoreLessBtn = tw.span`
-w-24 text-center bg-red-800 md:hidden
+w-24 text-center bg-red-800 
 `;
