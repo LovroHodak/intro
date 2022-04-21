@@ -1,17 +1,16 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { tw } from "../tailwind";
 import "./contact.css";
 
-export default function Contact() {
+export default forwardRef(function Contact(_, ref) {
+  console.log(ref);
   return (
-    <div className="">
-      <h1 className="text-center md:text-left text-6xl font-extrabold mb-8">
-        Get in touch
-      </h1>
-      <div className="border-2 border-black rounded-2xl w-[60%] mx-auto flex flex-col items-center p-4">
-        <h2 className="text-2xl font-bold p-1 text-center mb-4">
+    <div>
+      <Title ref={ref}>Get in touch</Title>
+      <WorkTogether>
+        <SmallerTitle>
           Want to work together or have any questions?
-        </h2>
+        </SmallerTitle>
         <Social>
           <SocialLink
             href="https://www.linkedin.com/in/lovrohodak/"
@@ -23,17 +22,27 @@ export default function Contact() {
             <i className="bi bi-envelope"></i>
           </SocialLink>
         </Social>
-      </div>
-      <Resume
-        id="cv"
-        className="border-2 border-black rounded-full flex flex-col w-56 h-56 justify-center items-center overflow-hidden mx-auto my-10 hover:opacity-50 cursor-pointer"
-      >
-        <h1 className="text-8xl">CV</h1>
-        <i className="bi bi-download text-8xl"></i>
+      </WorkTogether>
+
+      <Resume id="cv">
+        <h1>CV</h1>
+        <i className="bi bi-download"></i>
       </Resume>
     </div>
   );
-}
+});
+
+const Title = tw.h1`
+text-center md:text-left text-6xl font-extrabold mb-8
+`;
+
+const SmallerTitle = tw.h2`
+text-2xl font-bold p-1 text-center mb-4
+`
+
+const WorkTogether = tw.div`
+border-2 border-black rounded-2xl w-[60%] mx-auto flex flex-col items-center p-4
+`;
 
 const Social = tw.div`
 flex gap-8 text-4xl p-2
@@ -44,15 +53,5 @@ hover:opacity-50 cursor-pointer
 `;
 
 const Resume = tw.div`
-
-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: .5;
-  }
-}
+text-8xl border-2 border-black rounded-full flex flex-col w-56 h-56 justify-center items-center overflow-hidden mx-auto my-10 hover:opacity-50 cursor-pointer
 `;

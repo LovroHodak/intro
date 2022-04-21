@@ -1,5 +1,6 @@
-import React, { useRef, forwardRef } from "react";
+import React, { forwardRef } from "react";
 
+// settings for being able to use refrences and classes on tailwind components
 export const tw = new Proxy(
   {},
   {
@@ -15,3 +16,6 @@ export const tw = new Proxy(
     },
   }
 );
+
+
+// this corresponds to .vscode - settings.json

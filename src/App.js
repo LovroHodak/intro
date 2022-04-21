@@ -1,37 +1,38 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef } from "react";
+import { tw } from "./tailwind";
+
 import Contact from "./components/Contact";
 import { Introduction } from "./components/Introduction";
 import IntroMore from "./components/IntroMore";
 import Jobs from "./components/Jobs";
-import Logo from "./components/Logo";
 import Navbarr from "./components/Navbarr";
-import NavLinks from "./components/NavLinks";
 import Projects from "./components/Projects";
-
-import { tw } from "./tailwind";
 
 function App() {
   const projectsRef = useRef();
-
-  
-
-
-
-  useEffect(() => {
-    console.log(projectsRef.current);
-  });
+  const jobsRef = useRef();
+  const contactRef = useRef();
 
   return (
-    <div className="flex flex-col gap-16 max-w-6xl m-auto">
-      <Navbarr projectsRef={projectsRef} />
-
+    <AppContainer>
+      {/* to NAVBAR refrences are sent as Props */}
+      <Navbarr
+        projectsRef={projectsRef}
+        jobsRef={jobsRef}
+        contactRef={contactRef}
+      />
       <Introduction />
       <IntroMore />
+      {/* to Components refrences are sent as Refs */}
       <Projects ref={projectsRef} someProp="Heeej" />
-      <Jobs />
-      <Contact />
-    </div>
+      <Jobs ref={jobsRef} />
+      <Contact ref={contactRef} />
+    </AppContainer>
   );
 }
+
+const AppContainer = tw.div`
+flex flex-col gap-16 max-w-6xl m-auto
+`;
 
 export default App;

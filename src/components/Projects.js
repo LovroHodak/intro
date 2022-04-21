@@ -1,17 +1,17 @@
 import React, { useRef, forwardRef } from "react";
 import { tw } from "../tailwind";
 import { motion } from "framer-motion";
-import { useOnScreen } from "./use-on-screen";
+import { useOnScreen } from "../hooks/use-on-screen";
 
 
 
-export default forwardRef (function Projects({someProp}, ref) {
+export default forwardRef (function Projects(_, ref) {
 console.log(ref)
 
   return (
-    <Project className="flex flex-col gap-8" >
-      <Title ref={ref}>Projects {someProp}</Title>
-      <div className="flex flex-col gap-4" >
+    <Project>
+      <Title ref={ref}>Projects</Title>
+      <ProjectItems>
         <Item
           title="CurveZZZZ"
           image="https://www.hkolimpija.si/wp-content/uploads/2020/09/kukovi%C4%8D-scaled.jpg"
@@ -64,11 +64,12 @@ console.log(ref)
           myGitHub="https://github.com/LovroHodak"
           title="See more on Github"
         />
-      </div>
+      </ProjectItems>
     </Project>
   );
 })
 
+/* upstairs i am sending props to Item */
 function Item({ title, image, github, webSite, myGitHub, children }) {
   const ref = useRef();
   const show = useOnScreen(ref);
@@ -113,8 +114,11 @@ function Item({ title, image, github, webSite, myGitHub, children }) {
 }
 
 const Project = tw.div`
-
+flex flex-col gap-8
 `;
+const ProjectItems = tw.div`
+flex flex-col gap-4
+`
 const Title = tw.h1`
 text-center md:text-left text-6xl font-extrabold
 `;

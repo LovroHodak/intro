@@ -1,55 +1,74 @@
-import React from "react";
+import React, { forwardRef } from "react";
+import { tw } from "../tailwind";
 
-export default function Jobs() {
+export default forwardRef(function Jobs(_, ref) {
   return (
-    <div className="">
-      <h1 className="text-center md:text-left text-6xl font-extrabold mb-8">Jobs</h1>
-      <div className="flex gap-2 flex-wrap justify-center">
-        <div>
-          <img
-            src="https://cdn.worldvectorlogo.com/logos/novartis-1.svg"
-            alt="img"
-            className="w-[282px] h-[282px]"
-          />
-          <h1 className="text-2xl font-bold text-center p-1">Novartis</h1>
-          <h2 className="text-xl text-center p-1">Operater</h2>
-          <h2 className="text-xl text-center p-1">(2021 - current)</h2>
-          <h3 className="text-center p-1">Menges, Slovenia</h3>
-        </div>
-        <div>
-          <img
-            src="https://cdn.worldvectorlogo.com/logos/novartis-1.svg"
-            alt="img"
-            className="w-[282px] h-[282px]"
-          />
-          <h1 className="text-2xl font-bold text-center p-1">Amazon Logistics</h1>
-          <h2 className="text-xl text-center p-1">Logistics associate</h2>
-          <h2 className="text-xl text-center p-1">(2017 - 2020)</h2>
-          <h3 className="text-center p-1">Berlin, Germany</h3>
-        </div>
-        <div>
-          <img
-            src="https://cdn.worldvectorlogo.com/logos/novartis-1.svg"
-            alt="img"
-            className="w-[282px] h-[282px]"
-          />
-          <h1 className="text-2xl font-bold text-center p-1">Iustitia doo</h1>
-          <h2 className="text-xl text-center p-1">Sales</h2>
-          <h2 className="text-xl text-center p-1">(2014-2016)</h2>
-          <h3 className="text-center p-1">Ljubljana, Slovenia</h3>
-        </div>
-        <div>
-          <img
-            src="https://cdn.worldvectorlogo.com/logos/novartis-1.svg"
-            alt="img"
-            className="w-[282px] h-[282px]"
-          />
-          <h1 className="text-2xl font-bold text-center p-1">Direkt4in doo</h1>
-          <h2 className="text-xl text-center p-1">Chief of staff</h2>
-          <h2 className="text-xl text-center p-1">(2011 - 2014)</h2>
-          <h3 className="text-center p-1">Ljubljana, Slovenia</h3>
-        </div>
-      </div>
+    <div>
+      <Title ref={ref}>Jobs</Title>
+      <AllJobs>
+        <Job
+          image="https://cdn.worldvectorlogo.com/logos/novartis-1.svg"
+          company="Novartis"
+          type="Pharmacy"
+          year="(2021 - current)"
+          place="Menges, Slovenia"
+        />
+        <Job
+          image="https://cdn.worldvectorlogo.com/logos/novartis-1.svg"
+          company="Amazon Logistics"
+          type="Logistics"
+          year="(2017 - 2020)"
+          place="Berlin, Germany"
+        />
+        <Job
+          image="https://cdn.worldvectorlogo.com/logos/novartis-1.svg"
+          company="Iustitia doo"
+          type="Sales"
+          year="(2014-2016)"
+          place="Ljubljana, Slovenia"
+        />
+        <Job
+          image="https://cdn.worldvectorlogo.com/logos/novartis-1.svg"
+          company="Direkt4in doo"
+          type="Hospitality"
+          year="(2011 - 2014)"
+          place="Ljubljana, Slovenia"
+        />
+      </AllJobs>
+    </div>
+  );
+});
+
+function Job({ image, company, type, year, place }) {
+  return (
+    <div>
+      <Image src={image} alt="img" />
+      <Company>{company}</Company>
+      <Type>{type}</Type>
+      <Year>{year}</Year>
+      <Place>{place}</Place>
     </div>
   );
 }
+
+const Title = tw.h1`
+text-center md:text-left text-6xl font-extrabold mb-8
+`;
+const AllJobs = tw.div`
+flex gap-2 flex-wrap justify-center
+`;
+const Image = tw.img`
+w-[282px] h-[282px]
+`;
+const Company = tw.h1`
+text-2xl font-bold text-center p-1
+`;
+const Type = tw.h1`
+text-xl text-center p-1
+`;
+const Year = tw.h1`
+text-xl text-center p-1
+`;
+const Place = tw.h1`
+text-center p-1
+`;

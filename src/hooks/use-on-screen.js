@@ -22,3 +22,6 @@ export function useOnScreen(ref, rootMargin = "0px") {
     }, []); // Empty array ensures that effect is only run on mount and unmount
     return isIntersecting;
   }
+
+
+  // hook that provides animation in Projects

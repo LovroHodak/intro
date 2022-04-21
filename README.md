@@ -1,3 +1,26 @@
+PORTFOLIO PAGE
+
+Page that tells a little bit about myself, about technologies I use, my past working experiences, my projects and has my contact information.
+
+FE website build in React. 
+UseRef for navigating to content (with forwardRef) and useOnScreen hook for animation.
+Using Tailwind for styling and creating custom components. 
+Using Bootstrap for icons.
+Logo.css and contact.css files are used only for animation.
+Website is responsive and linked to targeted content.
+
+
+
+
+
+
+
+
+
+
+
+
+
 1. npm install -D tailwindcss postcss autoprefixer
 2. npx tailwindcss init -p
 /tailwind.config.js
