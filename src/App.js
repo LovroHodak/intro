@@ -32,7 +32,7 @@ function App() {
 }
 
 const AppContainer = tw.div`
-flex flex-col gap-16 max-w-6xl m-auto
+flex flex-col gap-16 max-w-6xl m-auto 
 `;
 
 export default App;

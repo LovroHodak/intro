@@ -6,13 +6,46 @@ export default function IntroMore() {
   return (
     <IntroMoreContainer>
       <About>
-        I was born and raised in Ljubljana where I have finished gymnasium
-        Ledina and got my bachelors degree in Philosophy. Not long after I
-        finished my studies I moved to Berlin where I have stayed for almost 4
-        years. Living abroad meant the world to me because I wanted to
-        experience the diversity of the world that we live in and Berlin is
-        probably one of the most diverse cities in Europe. But Corona came and I
-        couldn't visit Ljubljana frequently enough so I decided to move back.
+        I am a graduated Philosopher, born and raised in Ljubljana, Slovenia.
+        Currently majoring in its most lucrative branch: coding. Not long after
+        I finished my bachelor's I moved to Berlin where I stayed for almost 4
+        years. I decided to do so since I was always intent to explore the
+        concept of diversity and figured Berlin would be a perfect place to
+        start.
+        <br />
+        <br />
+        Even though Berlin was great, I enjoyed coming back to my hometown
+        regularly. Unfortunately, due to the pandemic I couldn't visit Ljubljana
+        frequently enough so I decided to simply move back.
+        <br />
+        <br />
+        As you might have figured out already, having a bachelor's degree in
+        Philosophy did not make me the “most wanted” on the job market. This
+        meant that I had to have tried a variety of different jobs. I have
+        worked in administration, hospitality, sales, logistics, event
+        organization, you name it!
+        <br />
+        <br />
+        Throughout my employment, I have worked alone, in big groups,
+        international teams, and had multilingual work environments where I
+        could brush up on my English, German, Slovene and Serbo-Croatian.
+        <br />
+        <br />
+        I enjoy working in big teams but also value my privacy. I am a firm
+        believer that honesty and having willingness to see the good in other
+        people are key to working well with others.
+        <br />
+        <br />
+        If I had to categorize myself, I would say I am a results-driven person
+        given the fact that I like the way accomplishing things makes me feel,
+        all warm and fuzzy. However, I never try to overdo it, always being
+        aware that at the end of the day I am just human surrounded with other
+        human beings.
+        <br />
+        <br />
+        Now finally, coming to the point of why I made this website and why you
+        are here, hopefully : I make FREE websites! Just kidding, here is the
+        rest of my story.
       </About>
       <ShowMoreLessBtn
         className={show === "block" ? "hidden" : ""}
@@ -23,50 +56,55 @@ export default function IntroMore() {
         Read more
       </ShowMoreLessBtn>
       <About className={show}>
-        Having a bachelor's degree in Philosophy means that I have tried a
-        variety of different jobs. I have worked in administration, hospitality,
-        sales, logistios, organization of events... I have worked alone and I
-        have worked in big groups. I have worked in international teams where
-        the spoken languages were English and German, as well as in Slovenian or
-        Serbo-Croatian teams. I enjoy working in big teams but as well I value
-        my privacy. I believe the key to working in big teams are honesty and
-        willingness to see the good in other people. Being good at what you do
-        makes you feel better about yourself so I am definitely a results-driven
-        person but with constant awareness that at the end of the day I am just
-        human surrounded with other human beings.
-      </About>
-      <About className={show}>
-        While trying different career paths I stumbled upon JavaScript meetup in
-        Berlin. I was always curious about how programming works so I started to
-        visit this meetup every week. It started great with HTML and CSS
-        everything made sense to me and I couldn't realize what all the fuzz was
-        about. And then came JavaScript. I knew I had to fly or fight.
-        Fortunately I stuck with it and after I got my first Counter running the
-        whole new world of JavaScript was there for me to uncover. But life
-        happened, so many things to do and so little time. So I made a promise
-        to myself that no matter how little free time I will have I will invest
-        it into programming.
-      </About>
-      <About className={show}>
-        So when I moved back to Slovenia I took 3 months off to attend
-        Full-stack web-dev Bootstrap. Knowing only about the front-end so far
-        this was a great decision because there I learned about server side
-        programming with Node, how to interact with databases (Mongo) and I also
-        learned about the front-end library called React. Things started to come
-        together, but the more knowledge I possessed the more questions arose. I
-        knew I was up to something and I didnt mean to let it go. So I found
-        myself a job in Slovenia but I also found myself a coding mentor to
-        guide me on my programming path. I wanted to wait long enough to feel
-        comfortable about my coding skills before I start applying for jobs. If
-        you are reading this, that means the time has come. 
-      </About>
-      <About className={show}>
-      When I don't work or
-        code I either do sports (big time sport enthusiast - basketball, bike,
-        badminton,...) or music (even bigger music enthusiast - i enjoy
-        listening, creating, playing, writing...). Or... I sit on my couch
-        thinking about life and all the answers that philosophy promised to
-        deliver but haven't yet lived up to its promise.
+        <br />
+        While trying different career paths and dance moves in Berlin, I
+        stumbled upon JavaScript. It started great with HTML and CSS. Everything
+        made sense to me and I couldn't realize what everyone was complaining
+        about . And then came JavaScript.
+        <br />
+        <br />
+        It was at this point that my flight or fight kicked in (at least I think
+        it was that, or just my third cup of coffee made me feel things).
+        Fortunately, I stuck with it and after I got my first Counter running,
+        the whole new world of JavaScript was there for me to uncover.
+        <br />
+        <br />
+        Then summer came, so many paths to bike, hoops to shoot and so many
+        opportunities to play “Wonderwall” at a campfire to impress my friends.
+        So, I started running out of time. However, I made a promise to myself
+        that no matter how little free time I will have I will invest it into
+        programming.
+        <br />
+        <br />
+        When I moved back to Slovenia I took 3 months off to attend Full-stack
+        web-dev Bootstrap. So far this was a great decision because there I
+        learned about server side programming with Node, how to interact with
+        databases (Mongo) and I also learned about the front-end library called
+        React.
+        <br />
+        <br />
+        Things started to come together, but the more knowledge I possessed the
+        more questions I had. At this point I knew my years studying philosophy
+        should come in handy. It had taught me that this meant I was up to
+        something and I should not let it go.
+        <br />
+        <br />
+        So I found myself a job in Slovenia to sustain all my cool hobbies but I
+        also found myself a coding mentor to guide me on my programming path.
+        Shout out to (Klemen ||you know who you are).
+        <br />
+        <br />
+        I wanted to wait long enough to feel comfortable about my coding skills
+        before I start applying for jobs. If you are reading this, that means
+        the time has come.
+        <br />
+        <br />
+        As the great philosopher, Peter Parker/ Spiderman once said: "Not
+        everyone is meant to make a difference. But for me, the choice to lead
+        an ordinary life is no longer an option." I would be thrilled to have
+        you join my journey. I can promise a hard worker, an expert on all
+        things philosophy and someone who by now knows a thing or two about
+        coding.
       </About>
       <ShowMoreLessBtn
         className={show}

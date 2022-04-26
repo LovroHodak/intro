@@ -1,3 +1,8 @@
+1. TAILWIND.js
+-kaj vse smo tu omogocili?
+
+
+
 PORTFOLIO PAGE
 
 Page that tells a little bit about myself, about technologies I use, my past working experiences, my projects and has my contact information.
