@@ -3,7 +3,7 @@ import { tw } from "../tailwind";
 import "./contact.css";
 
 export default forwardRef(function Contact(_, ref) {
-  console.log(ref);
+  //console.log(ref);
   return (
     <div>
       <Title ref={ref}>Get in touch</Title>
@@ -44,7 +44,7 @@ text-2xl font-bold p-1 text-center mb-4
 `;
 
 const WorkTogether = tw.div`
-border-2 border-black rounded-2xl w-[60%] mx-auto flex flex-col items-center p-4
+border-2 border-black rounded-2xl w-[80%] md:w-[60%] mx-auto flex flex-col items-center p-4
 `;
 
 const Social = tw.div`

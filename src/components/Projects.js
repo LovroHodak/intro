@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useOnScreen } from "../hooks/use-on-screen";
 
 export default forwardRef(function Projects(_, ref) {
-  console.log(ref);
+  //console.log(ref);
 
   return (
     <Project>
@@ -13,8 +13,8 @@ export default forwardRef(function Projects(_, ref) {
         <Item
           title="BookNB"
           image="https://www.klarinsvet.si/wp-content/uploads/2019/12/airbnb-booking-seminar.png"
-          github="https://github.com/LovroHodak/CurveZZZZ"
-          githubBE="https://github.com/LovroHodak/CurveZZZZ"
+          github="https://github.com/LovroHodak/BookNbFront"
+          githubBE="https://github.com/LovroHodak/BookNbBack"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
           code="When I started this project I was sure that I will be mostly working on BE creating a 
           scraping tool with a help of library Puppeteer. And to scrape two sites at once 
@@ -34,8 +34,8 @@ export default forwardRef(function Projects(_, ref) {
         <Item
           title="PANFU band"
           image="https://scontent-vie1-1.xx.fbcdn.net/v/t31.18172-8/17218615_1263497267036967_6785973532888712867_o.jpg?_nc_cat=110&ccb=1-5&_nc_sid=e3f864&_nc_ohc=JfWvijKJIXIAX9lOUr6&_nc_ht=scontent-vie1-1.xx&oh=00_AT8jJZRPVothJI8S-5Y4LJTiy3IsfGJeA2a2ie39maZxbw&oe=62873255"
-          github="https://github.com/LovroHodak/CurveZZZZ"
-          githubBE="https://github.com/LovroHodak/CurveZZZZ"
+          github="https://github.com/LovroHodak/panfuFrontend"
+          githubBE="https://github.com/LovroHodak/panfubackend"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
           code="When I started this project I was sure that I will be mostly working on BE creating a 
           scraping tool with a help of library Puppeteer. And to scrape two sites at once 
@@ -105,7 +105,7 @@ function Item({
         <Task>
           <TaskImage src={image} alt="img" />
           <TaskContent>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <TitleAndBtn>
               <SubTitle>{title}</SubTitle>
               {content ? (
                 <AboutBtn onClick={() => setContent(!content)}>
@@ -116,7 +116,7 @@ function Item({
                   About the project
                 </AboutBtn>
               )}
-            </div>
+            </TitleAndBtn>
             {content ? (
               <TaskBody>{children}</TaskBody>
             ) : (
@@ -162,6 +162,10 @@ function Item({
     </motion.div>
   );
 }
+
+const TitleAndBtn = tw.div`
+flex justify-between
+`
 
 const Project = tw.div`
 flex flex-col gap-8
