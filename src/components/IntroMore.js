@@ -14,7 +14,7 @@ export default function IntroMore() {
         start.
       </About>
       <ShowMoreLessBtn
-        className={`${show === "block" ? "hidden" : ""} md:hidden`}
+        className={`${show === "block" ? "hidden" : ""} md:hidden cursor-pointer hover:bg-red-500`}
         onClick={() => {
           setShow("block");
         }}
@@ -56,7 +56,7 @@ export default function IntroMore() {
         rest of my story.
       </About>
       <ShowMoreLessBtn
-        className={`${show === "block" ? "!hidden" : ""} hidden md:block`}
+        className={`${show === "block" ? "!hidden" : ""} hidden md:block cursor-pointer hover:bg-red-500`}
         onClick={() => {
           setShow("block");
         }}
@@ -114,7 +114,7 @@ export default function IntroMore() {
         coding.
       </About>
       <ShowMoreLessBtn
-        className={show}
+        className={`${show} cursor-pointer hover:bg-red-500`}
         onClick={() => {
           setShow("hidden");
         }}
