@@ -18,7 +18,7 @@ export function Introduction() {
           >
             LI
           </SocialLink>
-          <SocialLink>GM</SocialLink>
+          <SocialLink target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hodak.lovro@gmail.com">GM</SocialLink>
         </Social>
       </TitleAndBasic>
 

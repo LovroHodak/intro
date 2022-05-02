@@ -18,7 +18,10 @@ export default forwardRef(function Contact(_, ref) {
           >
             <i className="bi bi-linkedin"></i>
           </SocialLink>
-          <SocialLink>
+          <SocialLink
+            target="_blank"
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hodak.lovro@gmail.com"
+          >
             <i className="bi bi-envelope"></i>
           </SocialLink>
         </Social>
@@ -38,7 +41,7 @@ text-center md:text-left text-6xl font-extrabold mb-8
 
 const SmallerTitle = tw.h2`
 text-2xl font-bold p-1 text-center mb-4
-`
+`;
 
 const WorkTogether = tw.div`
 border-2 border-black rounded-2xl w-[60%] mx-auto flex flex-col items-center p-4

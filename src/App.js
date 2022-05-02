@@ -8,6 +8,8 @@ import Jobs from "./components/Jobs";
 import Navbarr from "./components/Navbarr";
 import Projects from "./components/Projects";
 
+
+
 function App() {
   const projectsRef = useRef();
   const jobsRef = useRef();
