@@ -12,43 +12,51 @@ export default function IntroMore() {
         years. I decided to do so since I was always intent to explore the
         concept of diversity and figured Berlin would be a perfect place to
         start.
-        <br />
-        <br />
+      </About>
+      <ShowMoreLessBtn
+        className={`${show === "block" ? "hidden" : ""} md:hidden`}
+        onClick={() => {
+          setShow("block");
+        }}
+      >
+        Read more
+      </ShowMoreLessBtn>
+      <About className={`${show} md:block`}>
         Even though Berlin was great, I enjoyed coming back to my hometown
         regularly. Unfortunately, due to the pandemic I couldn't visit Ljubljana
         frequently enough so I decided to simply move back.
-        <br />
-        <br />
+      </About>
+      <About className={`${show} md:block`}>
         As you might have figured out already, having a bachelor's degree in
         Philosophy did not make me the “most wanted” on the job market. This
         meant that I had to have tried a variety of different jobs. I have
         worked in administration, hospitality, sales, logistics, event
         organization, you name it!
-        <br />
-        <br />
+      </About>
+      <About className={`${show} md:block`}>
         Throughout my employment, I have worked alone, in big groups,
         international teams, and had multilingual work environments where I
         could brush up on my English, German, Slovene and Serbo-Croatian.
-        <br />
-        <br />
+      </About>
+      <About className={`${show} md:block`}>
         I enjoy working in big teams but also value my privacy. I am a firm
         believer that honesty and having willingness to see the good in other
         people are key to working well with others.
-        <br />
-        <br />
+      </About>
+      <About className={`${show} md:block`}>
         If I had to categorize myself, I would say I am a results-driven person
         given the fact that I like the way accomplishing things makes me feel,
         all warm and fuzzy. However, I never try to overdo it, always being
         aware that at the end of the day I am just human surrounded with other
         human beings.
-        <br />
-        <br />
+      </About>
+      <About className={`${show} md:block`}>
         Now finally, coming to the point of why I made this website and why you
         are here, hopefully : I make FREE websites! Just kidding, here is the
         rest of my story.
       </About>
       <ShowMoreLessBtn
-        className={show === "block" ? "hidden" : ""}
+        className={`${show === "block" ? "!hidden" : ""} hidden md:block`}
         onClick={() => {
           setShow("block");
         }}
@@ -56,49 +64,48 @@ export default function IntroMore() {
         Read more
       </ShowMoreLessBtn>
       <About className={show}>
-        <br />
         While trying different career paths and dance moves in Berlin, I
         stumbled upon JavaScript. It started great with HTML and CSS. Everything
         made sense to me and I couldn't realize what everyone was complaining
-        about . And then came JavaScript.
-        <br />
-        <br />
+        about. And then came JavaScript.
+      </About>
+      <About className={show}>
         It was at this point that my flight or fight kicked in (at least I think
         it was that, or just my third cup of coffee made me feel things).
         Fortunately, I stuck with it and after I got my first Counter running,
         the whole new world of JavaScript was there for me to uncover.
-        <br />
-        <br />
+      </About>
+      <About className={show}>
         Then summer came, so many paths to bike, hoops to shoot and so many
         opportunities to play “Wonderwall” at a campfire to impress my friends.
         So, I started running out of time. However, I made a promise to myself
         that no matter how little free time I will have I will invest it into
         programming.
-        <br />
-        <br />
+      </About>
+      <About className={show}>
         When I moved back to Slovenia I took 3 months off to attend Full-stack
         web-dev Bootstrap. So far this was a great decision because there I
         learned about server side programming with Node, how to interact with
         databases (Mongo) and I also learned about the front-end library called
         React.
-        <br />
-        <br />
+      </About>
+      <About className={show}>
         Things started to come together, but the more knowledge I possessed the
         more questions I had. At this point I knew my years studying philosophy
         should come in handy. It had taught me that this meant I was up to
         something and I should not let it go.
-        <br />
-        <br />
+      </About>
+      <About className={show}>
         So I found myself a job in Slovenia to sustain all my cool hobbies but I
         also found myself a coding mentor to guide me on my programming path.
-        Shout out to (Klemen ||you know who you are).
-        <br />
-        <br />
+        Shout out to Klemen!
+      </About>
+      <About className={show}>
         I wanted to wait long enough to feel comfortable about my coding skills
         before I start applying for jobs. If you are reading this, that means
         the time has come.
-        <br />
-        <br />
+      </About>
+      <About className={show}>
         As the great philosopher, Peter Parker/ Spiderman once said: "Not
         everyone is meant to make a difference. But for me, the choice to lead
         an ordinary life is no longer an option." I would be thrilled to have
@@ -119,10 +126,10 @@ export default function IntroMore() {
 }
 
 const IntroMoreContainer = tw.div`
-md:text-lg font-mono
+md:text-lg font-mono flex flex-col
 `;
 const About = tw.span`
-font-mono
+font-mono my-2
 `;
 const ShowMoreLessBtn = tw.span`
 w-24 text-center bg-red-800 

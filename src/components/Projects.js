@@ -89,9 +89,9 @@ function Item({ title, image, github, webSite, myGitHub, children }) {
               <OneLink href={webSite} target="_blank" rel="noreferrer">
                 <i className="bi bi-globe"></i> <p>Visit Webside</p>
               </OneLink>
-              <OneLink href={github} target="_blank" rel="noreferrer">
+              {github && <OneLink href={github} target="_blank" rel="noreferrer">
                 <i className="bi bi-github"></i> <p>See Code</p>
-              </OneLink>
+              </OneLink>}
             </TaskLinks>
           </TaskContent>
         </Task>
@@ -111,7 +111,7 @@ const Project = tw.div`
 flex flex-col gap-8
 `;
 const ProjectItems = tw.div`
-flex flex-col gap-4
+flex flex-col gap-4 overflow-x-hidden md:overflow-x-visible
 `;
 const Title = tw.h1`
 text-center md:text-left text-6xl font-extrabold
