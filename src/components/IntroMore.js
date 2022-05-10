@@ -52,7 +52,7 @@ export default function IntroMore() {
       </About>
       <About className={`${show} md:block`}>
         Now finally, coming to the point of why I made this website and why you
-        are here, hopefully : I make FREE websites! Just kidding, here is the
+        are here, hopefully: I make FREE websites! Just kidding, here is the
         rest of my story.
       </About>
       <ShowMoreLessBtn
@@ -84,7 +84,7 @@ export default function IntroMore() {
       </About>
       <About className={show}>
         When I moved back to Slovenia I took 3 months off to attend Full-stack
-        web-dev Bootstrap. So far this was a great decision because there I
+        web-dev Bootcamp. So far this was a great decision because there I
         learned about server side programming with Node, how to interact with
         databases (Mongo) and I also learned about the front-end library called
         React.

@@ -16,19 +16,18 @@ export default forwardRef(function Projects(_, ref) {
           github="https://github.com/LovroHodak/BookNbFront"
           githubBE="https://github.com/LovroHodak/BookNbBack"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
-          code="When I started this project I was sure that I will be mostly working on BE creating a 
-          scraping tool with a help of library Puppeteer. And to scrape two sites at once 
-          was a real challenge. When talking about Airbnb I had to click different buttons 
-          on different pages to get the results I wanted. But real magic happens on FE. 
-          I have build Calender from scratch using Date object. I also digged deep into 
-          useQuery hook, being able to get more results and then find data with keys. 
-          This is best shown in tabs, where each tab has its own results. Build with React, Mongo DB, Express, Node"
+          code="FE writen with library React where I have used Tailwind library for styling. 
+          I fetch data from backend with useQuery hook. I got my first glimpse of using useMemo hook, 
+          since I needed returned value before first render. Calendar is build from strach with Date object. 
+          BE is writen in Node where I first set up an Express server. Then I use library Puppeteer that helps 
+          me scrape data. What Puppeteer does is that it fires up a Cromium where I can than click and type 
+          into websites and gather data which is than returned to me."
         >
           Instead of visiting Airbnb and Booking seperately, BOOKNB allows you
           to type your destination once and get results from both websites.
-          Since Airbnb has an option of choosing what kind of place you want,
+          Since Airbnb has an option of choosing what kind of place you want to stay in,
           results are filtered so only offers that include entire place are
-          being checked. And is that is not enough in this app you can search
+          being checked. And if that is not enough in this app you can search
           multiple destinations and get results inside of a new tab.
         </Item>
         <Item
@@ -37,16 +36,10 @@ export default forwardRef(function Projects(_, ref) {
           github="https://github.com/LovroHodak/panfuFrontend"
           githubBE="https://github.com/LovroHodak/panfubackend"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
-          code="When I started this project I was sure that I will be mostly working on BE creating a 
-          scraping tool with a help of library Puppeteer. And to scrape two sites at once 
-          was a real challenge. When talking about Airbnb I had to click different buttons 
-          on different pages to get the results I wanted. But real magic happens on FE. 
-          I have build Calender from scratch using Date object. I also digged deep into 
-          useQuery hook, being able to get more results and then find data with keys. 
-          This is best shown in tabs, where each tab has its own results. Build with React, Mongo DB, Express, Node"
+          code="BE is writen in Node where i set up a server with Express library. I have also used connect-multiparty library which works with different data types. Since I decided to stream data I interected with MONGODB through GridFSBucket. FE is built in React, where i dived deeper into useEffect and useQuery hooks (useMutation). I styled this page with a touch of bootstrap and styled components. "
         >
           Band website. Here you can listen to PANFU music, browse through
-          gallerys and learn more about the band. There you can also find
+          gallerys and learn more about the band. You can also find
           contact information and links to youtube and facebook pages. Check it
           out you might like it!
         </Item>
@@ -55,18 +48,15 @@ export default forwardRef(function Projects(_, ref) {
           image="https://upload.wikimedia.org/wikipedia/en/7/75/Achtung%2C_die_Kurve%21.jpg"
           github="https://github.com/LovroHodak/CurveZZZZ"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
-          code="When I started this project I was sure that I will be mostly working on BE creating a 
-          scraping tool with a help of library Puppeteer. And to scrape two sites at once 
-          was a real challenge. When talking about Airbnb I had to click different buttons 
-          on different pages to get the results I wanted. But real magic happens on FE. 
-          I have build Calender from scratch using Date object. I also digged deep into 
-          useQuery hook, being able to get more results and then find data with keys. 
-          This is best shown in tabs, where each tab has its own results. Build with JavaScript, CSS, HTML"
+          code="In this project I use HTML, CSS and vanilla JavaScript. For purpose of drawing graphics I have used HTML Canvas element. In this project I got familiar with using event listeners, but real challenge arose when I had to dig back to highscholl mathemathics remembering how sinus and cosinus work so I was able to move lines in unlinear ways."
         >
-          My first ever project. Recreation of legendary multiplayer game
-          Achtung die Kurve. In this game you try to avoid hitting yourself,
-          your opponent or the wall. Call a friend and start playing! Project
-          was build from stratch idea was only borrowed for inspiration.
+          My first ever project. There were many projects I have build
+          afterwards, but like they say you never forget your first one, so I
+          just had to include it on this page. Recreation of legendary
+          multiplayer game Achtung die Kurve. In this game you try to avoid
+          hitting yourself, your opponent or the wall. Call a friend and start
+          playing! Project was build from stratch and idea was only borrowed for
+          inspiration.
         </Item>
         <Item
           myGitHub="https://github.com/LovroHodak"
@@ -165,7 +155,7 @@ function Item({
 
 const TitleAndBtn = tw.div`
 flex justify-between
-`
+`;
 
 const Project = tw.div`
 flex flex-col gap-8
