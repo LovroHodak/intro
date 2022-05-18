@@ -8,7 +8,7 @@ export default function Navbarr({ projectsRef, contactRef, jobsRef }) {
 
   return (
     <nav className="bg-white border-gray-200 rounded dark:bg-gray-800">
-      <div className="container flex flex-wrap md:flex-nowrap justify-between ">
+      <div className="w-full flex flex-wrap md:flex-nowrap justify-between ">
         <Logo />
 
         <button

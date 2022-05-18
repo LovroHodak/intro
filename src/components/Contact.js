@@ -2,6 +2,7 @@ import React, { forwardRef } from "react";
 import { tw } from "../tailwind";
 import "./contact.css";
 
+
 export default forwardRef(function Contact(_, ref) {
   //console.log(ref);
   return (
@@ -27,7 +28,7 @@ export default forwardRef(function Contact(_, ref) {
         </Social>
       </WorkTogether>
 
-      <Resume id="cv">
+      <Resume id="cv" href='/CV_Lovro_Hodak.pdf' target='_blank'>
         <h1>CV</h1>
         <i className="bi bi-download"></i>
       </Resume>
@@ -55,6 +56,6 @@ const SocialLink = tw.a`
 hover:opacity-50 cursor-pointer
 `;
 
-const Resume = tw.div`
+const Resume = tw.a`
 text-8xl border-2 border-black rounded-full flex flex-col w-56 h-56 justify-center items-center overflow-hidden mx-auto my-10 hover:opacity-50 cursor-pointer
 `;

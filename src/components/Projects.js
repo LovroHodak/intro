@@ -32,7 +32,7 @@ export default forwardRef(function Projects(_, ref) {
         </Item>
         <Item
           title="PANFU band"
-          image="https://scontent-vie1-1.xx.fbcdn.net/v/t31.18172-8/17218615_1263497267036967_6785973532888712867_o.jpg?_nc_cat=110&ccb=1-5&_nc_sid=e3f864&_nc_ohc=JfWvijKJIXIAX9lOUr6&_nc_ht=scontent-vie1-1.xx&oh=00_AT8jJZRPVothJI8S-5Y4LJTiy3IsfGJeA2a2ie39maZxbw&oe=62873255"
+          image="/panfuGood.gif"
           github="https://github.com/LovroHodak/panfuFrontend"
           githubBE="https://github.com/LovroHodak/panfubackend"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
@@ -67,6 +67,7 @@ export default forwardRef(function Projects(_, ref) {
   );
 });
 
+
 /* upstairs i am sending props to Item */
 function Item({
   title,
@@ -93,7 +94,7 @@ function Item({
     >
       {webSite ? (
         <Task>
-          <TaskImage src={image} alt="img" />
+          <TaskImageWrapper><TaskImage src={image} alt="img" /></TaskImageWrapper>
           <TaskContent>
             <TitleAndBtn>
               <SubTitle>{title}</SubTitle>
@@ -167,15 +168,19 @@ const Title = tw.h1`
 text-center md:text-left text-6xl font-extrabold
 `;
 const Task = tw.div`
-border-black border-2 flex flex-col rounded-xl overflow-hidden gap-8 md:flex-row
+border-black border-2 flex flex-col rounded-xl overflow-hidden gap-8 md:flex-row h-96 
 `;
 
 const SubTitle = tw.div`
 text-xl font-bold text-center md:text-left
 `;
 
+const TaskImageWrapper = tw.div`
+w-96 flex-shrink-0 flex-grow-0  h-full relative p-4 flex items-center justify-center
+`
+
 const TaskImage = tw.img`
-w-96 max-h-96 flex-shrink-0 flex-grow-0 h-full object-cover mx-auto p-4
+max-w-full max-h-full md:hover:scale-200 md:transition-transform md:origin-[center_left] cursor-zoom-in
 `;
 
 const TaskContent = tw.div`

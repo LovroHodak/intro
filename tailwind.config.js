@@ -5,7 +5,7 @@ module.exports = {
   ],
   // use EXTEND to only add and not overwrite styles
   theme: {
-    extend: {fontSize: {tinny: '0.5rem'}},
+    extend: {fontSize: {tinny: '0.5rem'}, scale: {'200': '2'}},
   },
   plugins: [],
 }
