@@ -13,6 +13,11 @@ export default function IntroMore() {
         concept of diversity and figured Berlin would be a perfect place to
         start.
       </About>
+      <About>
+        Even though Berlin was great, I enjoyed coming back to my hometown
+        regularly. Unfortunately, due to the pandemic I couldn't visit Ljubljana
+        frequently enough so I decided to simply move back.
+      </About>
       <ShowMoreLessBtn
         className={`${show === "block" ? "hidden" : ""} md:hidden cursor-pointer hover:bg-red-500`}
         onClick={() => {
@@ -21,11 +26,7 @@ export default function IntroMore() {
       >
         Read more
       </ShowMoreLessBtn>
-      <About className={`${show} md:block`}>
-        Even though Berlin was great, I enjoyed coming back to my hometown
-        regularly. Unfortunately, due to the pandemic I couldn't visit Ljubljana
-        frequently enough so I decided to simply move back.
-      </About>
+      
       <About className={`${show} md:block`}>
         As you might have figured out already, having a bachelor's degree in
         Philosophy did not make me the “most wanted” on the job market. This

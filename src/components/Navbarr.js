@@ -7,7 +7,7 @@ export default function Navbarr({ projectsRef, contactRef, jobsRef }) {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className="bg-white border-gray-200 rounded dark:bg-gray-800">
+    <nav className="bg-transparent border-gray-200 rounded dark:bg-gray-800">
       <div className="w-full flex flex-wrap md:flex-nowrap justify-between ">
         <Logo />
 
@@ -92,5 +92,5 @@ export default function Navbarr({ projectsRef, contactRef, jobsRef }) {
 }
 
 const NavLinks = tw.a`
-block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
+cursor-pointer block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
 `;
