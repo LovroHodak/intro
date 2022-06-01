@@ -12,40 +12,31 @@ export default forwardRef(function Projects(_, ref) {
       <ProjectItems>
         <Item
           title="BookNB"
-          /* image="https://www.klarinsvet.si/wp-content/uploads/2019/12/airbnb-booking-seminar.png"
-           */
           image="/BookNBGood.gif"
           github="https://github.com/LovroHodak/BookNbFront"
           githubBE="https://github.com/LovroHodak/BookNbBack"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
           code={
-            <div className="text-sm lg:text-base">
-              <strong className="drop-shadow-[0_0_3px_red]">Front-end</strong>{" "}
-              writen with library{" "}
-              <strong className="drop-shadow-[0_0_3px_red]">React</strong> where
-              I have used{" "}
-              <strong className="drop-shadow-[0_0_3px_red]">Tailwind</strong> library for styling. I fetch data from backend with{" "}
-              <strong className="drop-shadow-[0_0_3px_red]">
-                useQuery hook
-              </strong>
-              . I got my first glimpse of using{" "}
-              <strong className="drop-shadow-[0_0_3px_red]">
-                useMemo hook
-              </strong>
-              , since I needed returned value before first render.{" "}
-              <strong className="drop-shadow-[0_0_3px_red]">Calendar</strong> is
-              build from strach with{" "}
-              <strong className="drop-shadow-[0_0_3px_red]">Date object</strong>
-              . <strong className="drop-shadow-[0_0_3px_red]">Back-end</strong> is writen in{" "}
-              <strong className="drop-shadow-[0_0_3px_red]">
-                Node.js
-              </strong>{" "}
-              where I first set up an{" "}
-              <strong className="drop-shadow-[0_0_3px_red]">Express</strong> server. Then I use library{" "}
-              <strong className="drop-shadow-[0_0_3px_red]">Puppeteer</strong> that helps me scrape data. What Puppeteer does is that it fires up
-              a <strong className="drop-shadow-[0_0_3px_red]">Cromium</strong> where I can than click and type into websites and gather data
-              which is than returned to me.
-           </div>
+            <CodeDiv className="text-sm lg:text-base">
+              <StrongHighlighted>Front-end</StrongHighlighted> writen with
+              library <StrongHighlighted>React</StrongHighlighted> where I have
+              used <StrongHighlighted>Tailwind</StrongHighlighted> library for
+              styling. I fetch data from backend with{" "}
+              <StrongHighlighted>useQuery hook</StrongHighlighted>. I got my
+              first glimpse of using{" "}
+              <StrongHighlighted>useMemo hook</StrongHighlighted>, since I
+              needed returned value before first render.{" "}
+              <StrongHighlighted>Calendar</StrongHighlighted> is build from
+              strach with <StrongHighlighted>Date object</StrongHighlighted>.{" "}
+              <StrongHighlighted>Back-end</StrongHighlighted> is writen in{" "}
+              <StrongHighlighted>Node.js</StrongHighlighted> where I first set
+              up an <StrongHighlighted>Express</StrongHighlighted> server. Then
+              I use library <StrongHighlighted>Puppeteer</StrongHighlighted>{" "}
+              that helps me scrape data. What Puppeteer does is that it fires up
+              a <StrongHighlighted>Cromium</StrongHighlighted> where I can than
+              click and type into websites and gather data which is than
+              returned to me.
+            </CodeDiv>
           }
         >
           Instead of visiting Airbnb and Booking seperately, BOOKNB allows you
@@ -62,14 +53,26 @@ export default forwardRef(function Projects(_, ref) {
           githubBE="https://github.com/LovroHodak/panfubackend"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
           code={
-            <div className="text-sm lg:text-base">
-              <strong className="drop-shadow-[0_0_3px_red]">Back-end</strong> is writen in <strong className="drop-shadow-[0_0_3px_red]">Node.js</strong> where i set up a server with <strong className="drop-shadow-[0_0_3px_red]">Express</strong>.{" "}
-              
-                I have also used
-                <strong className="drop-shadow-[0_0_3px_red]"> connect-multiparty</strong> library which works with different data types.
-              Since I decided to stream data I interected with <strong className="drop-shadow-[0_0_3px_red]">MONGODB</strong> through <strong className="drop-shadow-[0_0_3px_red]">GridFSBucket</strong>. <strong className="drop-shadow-[0_0_3px_red]">Front-end</strong> is built in <strong className="drop-shadow-[0_0_3px_red]">React</strong>, where i dived deeper into <strong className="drop-shadow-[0_0_3px_red]">useEffect and useQuery hooks (useMutation)</strong>. I styled this page
-              with a touch of <strong className="drop-shadow-[0_0_3px_red]">Bootstrap</strong> and <strong className="drop-shadow-[0_0_3px_red]">Styled components</strong>.{" "}
-            </div>
+            <CodeDiv>
+              <StrongHighlighted>Back-end</StrongHighlighted> is writen in{" "}
+              <StrongHighlighted>Node.js</StrongHighlighted> where i set up a
+              server with <StrongHighlighted>Express</StrongHighlighted>. I have
+              also used
+              <StrongHighlighted> connect-multiparty</StrongHighlighted> library
+              which works with different data types. Since I decided to stream
+              data I interected with{" "}
+              <StrongHighlighted>MONGODB</StrongHighlighted> through{" "}
+              <StrongHighlighted>GridFSBucket</StrongHighlighted>.{" "}
+              <StrongHighlighted>Front-end</StrongHighlighted> is built in{" "}
+              <StrongHighlighted>React</StrongHighlighted>, where i dived deeper
+              into{" "}
+              <StrongHighlighted>
+                useEffect and useQuery hooks (useMutation)
+              </StrongHighlighted>
+              . I styled this page with a touch of{" "}
+              <StrongHighlighted>Bootstrap</StrongHighlighted> and{" "}
+              <StrongHighlighted>Styled components</StrongHighlighted>.{" "}
+            </CodeDiv>
           }
         >
           Band website. Here you can listen to PANFU music, browse through
@@ -79,19 +82,23 @@ export default forwardRef(function Projects(_, ref) {
         </Item>
         <Item
           title="CurveZZZZ"
-          /* image="https://upload.wikimedia.org/wikipedia/en/7/75/Achtung%2C_die_Kurve%21.jpg" */
           image="/CurvezzzGood.gif"
           github="https://github.com/LovroHodak/CurveZZZZ"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
           code={
-            <div className="text-sm lg:text-base">
-              In this project I use <strong className="drop-shadow-[0_0_3px_red]">HTML, CSS and vanilla JavaScript</strong>. For
-              purpose of drawing graphics I have used <strong className="drop-shadow-[0_0_3px_red]">HTML Canvas element</strong>. In
-              this project I got familiar with using <strong className="drop-shadow-[0_0_3px_red]">event listeners</strong>, but real
+            <CodeDiv>
+              In this project I use{" "}
+              <StrongHighlighted>
+                HTML, CSS and vanilla JavaScript
+              </StrongHighlighted>
+              . For purpose of drawing graphics I have used{" "}
+              <StrongHighlighted>HTML Canvas element</StrongHighlighted>. In
+              this project I got familiar with using{" "}
+              <StrongHighlighted>event listeners</StrongHighlighted>, but real
               challenge arose when I had to dig back to highscholl mathemathics
               remembering how sinus and cosinus work so I was able to move lines
               in unlinear ways.
-            </div>
+            </CodeDiv>
           }
         >
           My first ever project. There were many projects I have build
@@ -111,7 +118,7 @@ export default forwardRef(function Projects(_, ref) {
   );
 });
 
-/* upstairs i am sending props to Item */
+/* top i am sending props to Item */
 function Item({
   title,
   image,
@@ -137,8 +144,8 @@ function Item({
     >
       {webSite ? (
         <Task>
-          <div className="bg-amber-200 absolute top-2 left-2 w-full h-full rounded-xl z-10"></div>
-          <div className="absolute w-full h-full border-2 border-black rounded-xl z-20"></div>
+          <YellowSqrTask />
+          <BlackSqrTask />
           <TaskImageWrapper>
             <TaskImage src={image} alt="img" />
           </TaskImageWrapper>
@@ -188,7 +195,7 @@ function Item({
         </Task>
       ) : (
         <AllGitHub>
-          <div className="bg-amber-200 absolute top-2 left-2 w-full h-full rounded-xl"></div>
+          <YellowSqrGit />
           <a
             href={myGitHub}
             target="_blank"
@@ -198,13 +205,15 @@ function Item({
             <i className="bi bi-github mr-4"></i>
             {title}
           </a>
-          <div className="absolute w-full h-full border-2 border-black rounded-xl"></div>
+          <BlackSqrGit />
         </AllGitHub>
       )}
     </motion.div>
   );
 }
 
+
+// style
 const TitleAndBtn = tw.div`
 flex flex-col smaller:flex-row items-center justify-between
 `;
@@ -264,4 +273,27 @@ block py-2 px-2 rounded-lg text-base bg-blue-500 text-white -translate-y-1 activ
 
 const BtnWrapper = tw.button`
 bg-blue-900 rounded-lg border-none p-0 cursor-pointer outline-offset-4 w-40
+`;
+
+const CodeDiv = tw.div`
+text-sm lg:text-base
+`;
+
+const StrongHighlighted = tw.strong`
+drop-shadow-[0_0_3px_red]
+`;
+
+const YellowSqrTask = tw.div`
+bg-amber-200 absolute top-2 left-2 w-full h-full rounded-xl z-10
+`;
+const YellowSqrGit = tw.div`
+bg-amber-200 absolute top-2 left-2 w-full h-full rounded-xl
+`;
+
+const BlackSqrTask = tw.div`
+absolute w-full h-full border-2 border-black rounded-xl z-20
+`;
+
+const BlackSqrGit = tw.div`
+absolute w-full h-full border-2 border-black rounded-xl
 `;
