@@ -18,33 +18,37 @@ export default forwardRef(function Projects(_, ref) {
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
           code={
             <CodeDiv className="text-sm lg:text-base">
-              <StrongHighlighted>Front-end</StrongHighlighted> writen with
-              library <StrongHighlighted>React</StrongHighlighted> where I have
-              used <StrongHighlighted>Tailwind</StrongHighlighted> library for
-              styling. I fetch data from backend with{" "}
-              <StrongHighlighted>useQuery hook</StrongHighlighted>. I got my
-              first glimpse of using{" "}
-              <StrongHighlighted>useMemo hook</StrongHighlighted>, since I
-              needed returned value before first render.{" "}
-              <StrongHighlighted>Calendar</StrongHighlighted> is build from
-              strach with <StrongHighlighted>Date object</StrongHighlighted>.{" "}
-              <StrongHighlighted>Back-end</StrongHighlighted> is writen in{" "}
-              <StrongHighlighted>Node.js</StrongHighlighted> where I first set
-              up an <StrongHighlighted>Express</StrongHighlighted> server. Then
-              I use library <StrongHighlighted>Puppeteer</StrongHighlighted>{" "}
-              that helps me scrape data. What Puppeteer does is that it fires up
-              a <StrongHighlighted>Cromium</StrongHighlighted> where I can than
-              click and type into websites and gather data which is than
+              <StrongHighlighted>Front-end</StrongHighlighted> was written with
+              the <StrongHighlighted>React</StrongHighlighted> library where I
+              have used the
+              <StrongHighlighted> Tailwind</StrongHighlighted> library for
+              styling. I fetched data from the backend with
+              <StrongHighlighted> useQuery hook</StrongHighlighted>. Here, I got
+              my first glimpse of using the
+              <StrongHighlighted> useMemo </StrongHighlighted>
+              hook, since I needed returned value before the first render. The
+              calendar was built from scratch with a
+              <StrongHighlighted> Date object</StrongHighlighted>. The{" "}
+              <StrongHighlighted>Back-end </StrongHighlighted>
+              is written in <StrongHighlighted>Node.js</StrongHighlighted> where
+              I first set up an{" "}
+              <StrongHighlighted>Express server</StrongHighlighted>. For the
+              library I used <StrongHighlighted>Puppeteer</StrongHighlighted>{" "}
+              which helps me scrape data. What Puppeteer does is that it fires
+              up a <StrongHighlighted>Cromium</StrongHighlighted> where I can
+              then click and type into websites and gather data which is
               returned to me.
             </CodeDiv>
           }
         >
-          Instead of visiting Airbnb and Booking seperately, BOOKNB allows you
-          to type your destination once and get results from both websites.
-          Since Airbnb has an option of choosing what kind of place you want to
-          stay in, results are filtered so only offers that include entire place
-          are being checked. And if that is not enough in this app you can
-          search multiple destinations and get results inside of a new tab.
+          Wouldn’t it be great to combine your vacation rental options into one
+          app?Instead of visiting Airbnb and Booking separately, BOOKNB allows
+          you to type your destination once and gets you results from both
+          websites. Since Airbnb has an option of choosing what kind of place
+          you want to stay in, the results were filtered so that only offers
+          that include the entire place are being presented. And If that is not
+          enough, with the Booknb app you can also search multiple destinations
+          and get the results inside of a new tab.
         </Item>
         <Item
           title="PANFU band"
@@ -54,31 +58,33 @@ export default forwardRef(function Projects(_, ref) {
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
           code={
             <CodeDiv>
-              <StrongHighlighted>Back-end</StrongHighlighted> is writen in{" "}
-              <StrongHighlighted>Node.js</StrongHighlighted> where i set up a
-              server with <StrongHighlighted>Express</StrongHighlighted>. I have
-              also used
-              <StrongHighlighted> connect-multiparty</StrongHighlighted> library
+              The <StrongHighlighted>Back-end</StrongHighlighted> was written in{" "}
+              <StrongHighlighted>Node.js</StrongHighlighted> where I set up a
+              server with
+              <StrongHighlighted> Express</StrongHighlighted>. I have also used
+              the{" "}
+              <StrongHighlighted>connect-multiparty library</StrongHighlighted>{" "}
               which works with different data types. Since I decided to stream
-              data I interected with{" "}
+              data I interacted with{" "}
               <StrongHighlighted>MONGODB</StrongHighlighted> through{" "}
-              <StrongHighlighted>GridFSBucket</StrongHighlighted>.{" "}
-              <StrongHighlighted>Front-end</StrongHighlighted> is built in{" "}
-              <StrongHighlighted>React</StrongHighlighted>, where i dived deeper
-              into{" "}
+              <StrongHighlighted>GridFSBucket</StrongHighlighted>. While the{" "}
+              <StrongHighlighted>Front-end </StrongHighlighted>
+              is built in <StrongHighlighted>React</StrongHighlighted>, where I
+              dived deeper into{" "}
               <StrongHighlighted>
                 useEffect and useQuery hooks (useMutation)
               </StrongHighlighted>
-              . I styled this page with a touch of{" "}
-              <StrongHighlighted>Bootstrap</StrongHighlighted> and{" "}
-              <StrongHighlighted>Styled components</StrongHighlighted>.{" "}
+              . I styled this page with a touch of <StrongHighlighted>
+                 Bootstrap and Styled components
+              </StrongHighlighted>
+              .
             </CodeDiv>
           }
         >
-          Band website. Here you can listen to PANFU music, browse through
-          gallerys and learn more about the band. You can also find contact
-          information and links to youtube and facebook pages. Check it out you
-          might like it!
+          Band website! Here you can listen to PANFU music, browse through our
+          galleries and learn more about the band. You can also find their
+          contact information and links to youtube and facebook pages. Check it
+          out, you might like it!
         </Item>
         <Item
           title="CurveZZZZ"
@@ -101,13 +107,12 @@ export default forwardRef(function Projects(_, ref) {
             </CodeDiv>
           }
         >
-          My first ever project. There were many projects I have build
-          afterwards, but like they say you never forget your first one, so I
-          just had to include it on this page. Recreation of legendary
-          multiplayer game Achtung die Kurve. In this game you try to avoid
-          hitting yourself, your opponent or the wall. Call a friend and start
-          playing! Project was build from stratch and idea was only borrowed for
-          inspiration.
+          Est Voil here it is, my first project ever. There were many projects
+          after this one, but as they say: you never forget your first one. It
+          is a recreation of the legendary multiplayer game “Achtung die Kurve”.
+          The objective of the game is to try to avoid hitting yourself, your
+          opponent or the wall. Call a friend and start playing! The website was
+          built from scratch and the idea was only borrowed for inspiration.
         </Item>
         <Item
           myGitHub="https://github.com/LovroHodak"
@@ -211,7 +216,6 @@ function Item({
     </motion.div>
   );
 }
-
 
 // style
 const TitleAndBtn = tw.div`

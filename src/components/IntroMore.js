@@ -15,18 +15,20 @@ export default function IntroMore() {
       </About>
       <About>
         Even though Berlin was great, I enjoyed coming back to my hometown
-        regularly. Unfortunately, due to the pandemic I couldn't visit Ljubljana
-        frequently enough so I decided to simply move back.
+        regularly. Unfortunately, due to the pandemic I could not visit
+        Ljubljana frequently enough so I decided to simply move back.
       </About>
       <ShowMoreLessBtn
-        className={`${show === "block" ? "hidden" : ""} md:hidden cursor-pointer hover:bg-red-500`}
+        className={`${
+          show === "block" ? "hidden" : ""
+        } md:hidden cursor-pointer hover:bg-red-500`}
         onClick={() => {
           setShow("block");
         }}
       >
         Read more
       </ShowMoreLessBtn>
-      
+
       <About className={`${show} md:block`}>
         As you might have figured out already, having a bachelor's degree in
         Philosophy did not make me the “most wanted” on the job market. This
@@ -41,15 +43,15 @@ export default function IntroMore() {
       </About>
       <About className={`${show} md:block`}>
         I enjoy working in big teams but also value my privacy. I am a firm
-        believer that honesty and having willingness to see the good in other
-        people are key to working well with others.
+        believer that honesty and having the willingness to see the good in
+        other people are key to working well with others.
       </About>
       <About className={`${show} md:block`}>
-        If I had to categorize myself, I would say I am a results-driven person
-        given the fact that I like the way accomplishing things makes me feel,
-        all warm and fuzzy. However, I never try to overdo it, always being
-        aware that at the end of the day I am just human surrounded with other
-        human beings.
+        If I had to categorize myself, I would say I am a results-driven person.
+        Primarily because I like the way accomplishing things makes me feel, all
+        warm and fuzzy. However, I never try to overdo it, always being aware
+        that at the end of the day I am just human surrounded with other human
+        beings.
       </About>
       <About className={`${show} md:block`}>
         Now finally, coming to the point of why I made this website and why you
@@ -57,7 +59,9 @@ export default function IntroMore() {
         rest of my story.
       </About>
       <ShowMoreLessBtn
-        className={`${show === "block" ? "!hidden" : ""} hidden md:block cursor-pointer hover:bg-red-500`}
+        className={`${
+          show === "block" ? "!hidden" : ""
+        } hidden md:block cursor-pointer hover:bg-red-500`}
         onClick={() => {
           setShow("block");
         }}
@@ -67,7 +71,7 @@ export default function IntroMore() {
       <About className={show}>
         While trying different career paths and dance moves in Berlin, I
         stumbled upon JavaScript. It started great with HTML and CSS. Everything
-        made sense to me and I couldn't realize what everyone was complaining
+        made sense to me and I could not realize what everyone was complaining
         about. And then came JavaScript.
       </About>
       <About className={show}>
@@ -97,8 +101,8 @@ export default function IntroMore() {
         something and I should not let it go.
       </About>
       <About className={show}>
-        So I found myself a job in Slovenia to sustain all my cool hobbies but I
-        also found myself a coding mentor to guide me on my programming path.
+        So, I found myself a job in Slovenia to sustain all my cool hobbies but
+        I also found myself a coding mentor to guide me on my programming path.
         Shout out to Klemen!
       </About>
       <About className={show}>
@@ -110,7 +114,7 @@ export default function IntroMore() {
         As the great philosopher, Peter Parker/ Spiderman once said: "Not
         everyone is meant to make a difference. But for me, the choice to lead
         an ordinary life is no longer an option." I would be thrilled to have
-        you join my journey. I can promise a hard worker, an expert on all
+        you join my journey. I can promise you a hard worker, an expert on all
         things philosophy and someone who by now knows a thing or two about
         coding.
       </About>
