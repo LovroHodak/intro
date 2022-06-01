@@ -201,6 +201,7 @@ function Item({
       ) : (
         <AllGitHub>
           <YellowSqrGit />
+          <BlackSqrGit />
           <a
             href={myGitHub}
             target="_blank"
@@ -210,7 +211,7 @@ function Item({
             <i className="bi bi-github mr-4"></i>
             {title}
           </a>
-          <BlackSqrGit />
+          
         </AllGitHub>
       )}
     </motion.div>
