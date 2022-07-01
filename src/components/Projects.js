@@ -2,6 +2,7 @@ import React, { useRef, forwardRef, useState } from "react";
 import { tw } from "../tailwind";
 import { motion } from "framer-motion";
 import { useOnScreen } from "../hooks/use-on-screen";
+import lovroFoto from "../lovro.png";
 
 export default forwardRef(function Projects(_, ref) {
   //console.log(ref);
@@ -12,10 +13,11 @@ export default forwardRef(function Projects(_, ref) {
       <ProjectItems>
         <Item
           title="BookNB"
-          image="/BookNBGood.gif"
+          image="/BookNBGood1.gif"
+          //image={lovroFoto}
           github="https://github.com/LovroHodak/BookNbFront"
           githubBE="https://github.com/LovroHodak/BookNbBack"
-          webSite="https://lovrohodak.github.io/CurveZZZZ/"
+          webSite="https://booknb.netlify.app/"
           code={
             <CodeDiv className="text-sm lg:text-base">
               <StrongHighlighted>Front-end</StrongHighlighted> was written with
@@ -52,10 +54,11 @@ export default forwardRef(function Projects(_, ref) {
         </Item>
         <Item
           title="PANFU band"
-          image="/panfuGood.gif"
+          image="/panfuGood1.gif"
+          //image={lovroFoto}
           github="https://github.com/LovroHodak/panfuFrontend"
           githubBE="https://github.com/LovroHodak/panfubackend"
-          webSite="https://lovrohodak.github.io/CurveZZZZ/"
+          webSite="https://panfuband.netlify.app/"
           code={
             <CodeDiv>
               The <StrongHighlighted>Back-end</StrongHighlighted> was written in{" "}
@@ -88,7 +91,8 @@ export default forwardRef(function Projects(_, ref) {
         </Item>
         <Item
           title="CurveZZZZ"
-          image="/CurvezzzGood.gif"
+          image="/CurvezzzGood1.gif"
+          //image={lovroFoto}
           github="https://github.com/LovroHodak/CurveZZZZ"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
           code={
