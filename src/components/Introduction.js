@@ -1,6 +1,6 @@
 import React from "react";
 import { tw } from "../tailwind";
-import lovroFoto from "../lovro.png";
+import lovroFoto from "../lcv2-tra.png";
 
 export function Introduction() {
   return (

@@ -15,6 +15,7 @@ function App() {
   const jobsRef = useRef();
   const contactRef = useRef();
 
+
   return (
     <AppContainer>
       {/* to NAVBAR refrences are sent as Props */}

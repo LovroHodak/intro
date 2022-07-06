@@ -2,7 +2,6 @@ import React, { useRef, forwardRef, useState } from "react";
 import { tw } from "../tailwind";
 import { motion } from "framer-motion";
 import { useOnScreen } from "../hooks/use-on-screen";
-import lovroFoto from "../lovro.png";
 
 export default forwardRef(function Projects(_, ref) {
   //console.log(ref);
@@ -14,7 +13,6 @@ export default forwardRef(function Projects(_, ref) {
         <Item
           title="BookNB"
           image="/BookNBGood1.gif"
-          //image={lovroFoto}
           github="https://github.com/LovroHodak/BookNbFront"
           githubBE="https://github.com/LovroHodak/BookNbBack"
           webSite="https://booknb.netlify.app/"
@@ -44,7 +42,7 @@ export default forwardRef(function Projects(_, ref) {
           }
         >
           Wouldn’t it be great to combine your vacation rental options into one
-          app?Instead of visiting Airbnb and Booking separately, BOOKNB allows
+          app? Instead of visiting Airbnb and Booking separately, BOOKNB allows
           you to type your destination once and gets you results from both
           websites. Since Airbnb has an option of choosing what kind of place
           you want to stay in, the results were filtered so that only offers
@@ -55,7 +53,6 @@ export default forwardRef(function Projects(_, ref) {
         <Item
           title="PANFU band"
           image="/panfuGood1.gif"
-          //image={lovroFoto}
           github="https://github.com/LovroHodak/panfuFrontend"
           githubBE="https://github.com/LovroHodak/panfubackend"
           webSite="https://panfuband.netlify.app/"
@@ -92,7 +89,6 @@ export default forwardRef(function Projects(_, ref) {
         <Item
           title="CurveZZZZ"
           image="/CurvezzzGood1.gif"
-          //image={lovroFoto}
           github="https://github.com/LovroHodak/CurveZZZZ"
           webSite="https://lovrohodak.github.io/CurveZZZZ/"
           code={
@@ -248,7 +244,7 @@ const TaskImageWrapper = tw.div`
 medium:w-96 flex-shrink-0 flex-grow-0 medium:relative h-full  p-4 flex items-center justify-center cursor-pointer z-30
 `;
 
-const TaskImage = tw.img`
+const TaskImage = tw.video`
 max-w-full max-h-full medium:hover:scale-200 medium:transition-transform medium:origin-[center_left] cursor-zoom-in
 `;
 
