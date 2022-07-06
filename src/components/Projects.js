@@ -3,6 +3,7 @@ import { tw } from "../tailwind";
 import { motion } from "framer-motion";
 import { useOnScreen } from "../hooks/use-on-screen";
 
+
 export default forwardRef(function Projects(_, ref) {
   //console.log(ref);
 

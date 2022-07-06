@@ -2,6 +2,7 @@ import React from "react";
 import { tw } from "../tailwind";
 import lovroFoto from "../lcv2-tra.png";
 
+
 export function Introduction() {
   return (
     <Intro>
