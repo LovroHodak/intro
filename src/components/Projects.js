@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useOnScreen } from "../hooks/use-on-screen";
 
 
+
 export default forwardRef(function Projects(_, ref) {
   //console.log(ref);
 
@@ -13,7 +14,7 @@ export default forwardRef(function Projects(_, ref) {
       <ProjectItems>
         <Item
           title="BookNB"
-          image="/BookNBGood1.gif"
+          image="/BookNBGood11.gif"
           github="https://github.com/LovroHodak/BookNbFront"
           githubBE="https://github.com/LovroHodak/BookNbBack"
           webSite="https://booknb.netlify.app/"
@@ -53,7 +54,7 @@ export default forwardRef(function Projects(_, ref) {
         </Item>
         <Item
           title="PANFU band"
-          image="/panfuGood1.gif"
+          image="/panfuGood11.gif"
           github="https://github.com/LovroHodak/panfuFrontend"
           githubBE="https://github.com/LovroHodak/panfubackend"
           webSite="https://panfuband.netlify.app/"
@@ -245,7 +246,11 @@ const TaskImageWrapper = tw.div`
 medium:w-96 flex-shrink-0 flex-grow-0 medium:relative h-full  p-4 flex items-center justify-center cursor-pointer z-30
 `;
 
-const TaskImage = tw.video`
+/* const TaskImage = tw.video`
+max-w-full max-h-full medium:hover:scale-200 medium:transition-transform medium:origin-[center_left] cursor-zoom-in
+`; */
+
+const TaskImage = tw.img`
 max-w-full max-h-full medium:hover:scale-200 medium:transition-transform medium:origin-[center_left] cursor-zoom-in
 `;
 
