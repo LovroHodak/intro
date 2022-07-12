@@ -28,7 +28,7 @@ export default forwardRef(function Contact(_, ref) {
         </Social>
       </WorkTogether>
 
-      <Resume id="cv" href='/CVLovroHodak.pdf' target='_blank'>
+      <Resume id="cv" href='/CVHodakLovro.pdf' target='_blank'>
         <h1>CV</h1>
         <i className="bi bi-download"></i>
       </Resume>
