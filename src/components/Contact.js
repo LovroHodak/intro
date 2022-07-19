@@ -8,6 +8,7 @@ export default forwardRef(function Contact(_, ref) {
   return (
     <div>
       <Title ref={ref}>Get in touch</Title>
+      <iframe width="100%" height="1200" src="https://eventsframe.com/embed/m2Razwnio/tickets/" frameborder="0"></iframe>
       <WorkTogether>
         <SmallerTitle>
           Want to work together or have any questions?
