@@ -175,7 +175,7 @@ function Item({
             <TaskLinks>
               {content ? (
                 <OneLink href={webSite} target="_blank" rel="noreferrer">
-                  <i className="bi bi-globe"></i> <p>Visit Webside</p>
+                  <i className="bi bi-globe"></i> <p>Visit Website</p>
                 </OneLink>
               ) : (
                 <>
